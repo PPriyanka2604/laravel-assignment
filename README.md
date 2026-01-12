@@ -66,5 +66,70 @@ laravel/
 │
 └── README.md
 
+````
+⚙️ Installation & Setup
 
-## Installation
+1️⃣ Laravel Setup
+
+```
+
+cd main-laravel
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan serve
+
+````
+Laravel server will run at:
+```
+http://127.0.0.1:8000
+
+```
+Login Page:
+```
+http://127.0.0.1:8000/login
+
+```
+Calendar Page:
+```
+http://127.0.0.1:8000/html-page
+
+```
+2️⃣ Python Selenium Setup
+Install dependencies:
+```
+pip install selenium webdriver-manager
+
+```
+Run automation script:
+```
+python login_automation.py
+
+```
+📸 Screenshots
+
+Screenshots are included as proof of execution:
+
+Laravel server running
+
+Automated login using Selenium
+
+Calendar page successfully loaded
+
+Location:
+```
+screenshots/
+
+```
+📝 Notes
+
+The vendor/ folder is excluded from version control and must be installed via Composer
+
+Screenshots are included for validation purposes
+
+Sample credentials are used only for demonstration
+
+👩‍💻 Author
+
+Priyanka
+GitHub: PPriyanka2604
